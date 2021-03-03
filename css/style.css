@@ -11,6 +11,10 @@ h1, h3 {
     color:darkorange; 
 }
 
+footer {
+    margin: 10px;
+}
+
 .container {
     width: 680px;
     margin: auto;
