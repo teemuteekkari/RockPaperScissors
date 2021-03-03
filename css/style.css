@@ -1,0 +1,80 @@
+body {
+    background-color: darkslategray;
+    font-size: 20px;
+}
+
+span {
+    color: aliceblue;
+}
+
+h1, h3 {
+    color:darkorange; 
+}
+
+.container {
+    width: 680px;
+    margin: auto;
+}
+
+.text-container {
+    margin-bottom: 30px;
+}
+
+.menu {
+    font-size: 24px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    background: darkslategray;
+    margin: none;
+    padding: none;
+    cursor: pointer;
+}
+
+.new-game {
+    background: #76B3FA;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.players {
+    padding: 20px;
+}
+
+.player {
+    width: 43%;
+    float: left;
+    padding: 20px;
+}
+
+.computer {
+    width: 40%;
+    float: right;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.game {
+    display:none;
+}
+
+.pick {
+    display: none;
+}
+.picks {
+    display: none;
+}
+.pickbutton {
+    display: none;
+    margin-top: 30px;
+}

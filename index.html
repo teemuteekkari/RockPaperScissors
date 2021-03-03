@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock, Paper & Scissors - Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <script     src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+            <div class="game-container">
+    <header>
+        <h1>
+            Rock Paper Scissors
+        </h1>
+    </header>
+        <div class="menu text-container" id="start">
+            <div class="text-container">
+                <label for="wins"><span>Choose the number of wins needed to win:</span></label>
+                <input type="number" min="1" id="wins" value = "1"/>
+            </div>
+            <div>
+                <button class="new-game" onclick="startGame();">Start New Game</button>
+            </div>
+            
+        </div>
+        <div id="game">
+            <div class="result text-container">
+                <span id="end-result"></span>
+            </div>
+            <div class="picks">
+                <div class="text-container result">
+                    <span id="last-result" >
+                        LET'S SEE IF YOU CAN DEFEAT ME!
+                    </span>
+            </div>
+                <div class="players">
+                    <div class="player">
+                        <div class="text-container">
+                            <h3>PLAYER</h3>
+                            <span id="player-score">0</span>
+                        </div>
+                        <div class="pick">
+                            <img class="hidden" id="player-pick-1" src="images/rock.png" alt="Rock" />
+                            <img class="hidden" id="player-pick-2" src="images/paper.png" alt="Paper"/>
+                            <img class="hidden" id="player-pick-3" src="images/scissors.png" alt="Scissors"/>
+                        </div>
+                    </div>
+                    <div class="computer">
+                        <div class="text-container">
+                            <h3>COMPUTER</h3>
+                            <span id="computer-score">0</span>
+                        </div>
+                        <div class="pick" id="computer-pick">
+                            <img class="hidden" id="computer-pick-1" src="images/rock.png" alt="Rock" width="200" height="200"/>
+                            <img class="hidden" id="computer-pick-2" src="images/paper.png" alt="Paper"/>
+                            <img class="hidden" id="computer-pick-3" src="images/scissors.png" alt="Scissors"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pickbutton">
+                <div class="text-container">
+                    <span>CHOOSE YOUR WEAPON</span>
+                </div>
+                <img src="images/rock.png" alt="Rock" onclick="playRound(1)" />
+                 <img src="images/paper.png" alt="Paper" onclick="playRound(2)" />
+                 <img src="images/scissors.png" alt="Scissors" onclick="playRound(3)" />
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
