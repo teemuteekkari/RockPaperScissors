@@ -40,7 +40,7 @@ function playRound(playerPick) {
 
 function startGame() {
     winsNeeded = $("#wins").val();
-    if(winsNeeded != "" && winsNeeded > 0) {
+    if(winsNeeded != "" && winsNeeded > 0) { //if user submits empty box
         computerScore = 0;
         playerScore = 0;
         $("#computer-score").text(computerScore);
@@ -69,7 +69,7 @@ function showPicks(computerPick, playerPick) {
     $("#computer-pick-" + computerPick).show();
 }
 
-function getSession() {
+function getSession() { 
     computerScore = sessionStorage.getItem('computerScore');
     playerScore = sessionStorage.getItem('playerScore');
     winsNeeded = sessionStorage.getItem('winsNeeded');
